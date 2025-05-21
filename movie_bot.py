@@ -12,21 +12,20 @@ logger = logging.getLogger(__name__)
 # Season အလိုက် Video File IDs (Array အဖြစ်သိမ်းမည်)
 SEASON_DATA = {
     "season1": [
-        "BAACAgUAAxkBAAMGaCtas2ETl0llBN08cAGyBI42juAAAuUWAAJ941lVk0ysVUV_LOI2BA",
-        "BAACAgUAAxkBAAMHaCtazIYrZK15tgbl-sOHqqlCEAQAAgkXAAJ941lVm7Kbd2QFv1g2BA",
-        "BAACAgUAAxkBAAMIaCta-gtuMEmMlSexGQjUjXKsv8gAAtEWAAIlOlFVvy5BCt2OyMY2BA"
+        "VIDEO FIle ID 1",
+        "VIDEO File ID 2",
+        "VIDEO File ID 3",
     ],
     "season2": [
-        "BAACAgUAAxkBAANlaCu0kfS64ldVW5xmhyqCSOWqkmoAAtYXAALEIlFVK2bMQwqBLjQ2BA",
-        "BAACAgUAAxkBAANnaCu0tgszo-7F6r6G5E_cXcQBKxUAAmgHAAKkN4hUZyY4I3d5yWo2BA",
-        "BAACAgUAAxkBAANpaCu01_cY-MUyiSJhZAFrgakwycoAArYNAAJyCEBX0AmFw77-2Yc2BA",
-        "BAACAgUAAxkBAANqaCu0z1a2X3g5v4bq6Qe7m8r9c0AAtYXAALEIlFVK2bMQwqBLjQ2BA",
+        "VIDEO FIle ID 4",
+        "VIDEO File ID 5",
+        "VIDEO File ID 6",
     ],
     "season3": [
-        "VIDEO_FILE_ID_4",
-        "VIDEO_FILE_ID_5",
-        "VIDEO_FILE_ID_6"
-    ]
+        "VIDEO FIle ID 7",
+        "VIDEO File ID 8",
+        "VIDEO File ID 9",
+    ],
 }
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -118,7 +117,7 @@ async def handle_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     # Bot Token ထည့်ပါ
-    application = Application.builder().token("7816726849:AAGgO81NBHs-jMyceLne6EPVo0yGswBHXQQ").build()
+    application = Application.builder().token("your bot token").build()
 
     # Command Handlers များကို အလိုအလျောက်ဖန်တီးပါ
     for season in SEASON_DATA.keys():
