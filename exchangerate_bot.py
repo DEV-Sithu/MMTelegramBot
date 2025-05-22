@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # ✅ Telegram Bot Token
-BOT_TOKEN = "သင့် BotFather မှ ပြန်ရယူသော သစ်လွင် token"  
+BOT_TOKEN = "your_bot_token"
 
 # ✅ Logging
 logging.basicConfig(
