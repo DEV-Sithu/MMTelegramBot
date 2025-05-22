@@ -32,6 +32,12 @@ pip install python-telegram-bot
 // google sheet
 pip install gspread google-auth
 
-link [t.me/itprogrammingfreeebook](t.me/itprogrammingfreeebook)
+link [itprogrammingfreeebook](t.me/itprogrammingfreeebook)
 ```
 
+# Youtube Video Downloader Bot
+```
+pip install python-telegram-bot
+pip install pyrogram tgcrypto yt-dlp
+pip install requests
+```
