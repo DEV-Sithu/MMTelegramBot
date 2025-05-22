@@ -195,7 +195,7 @@ async def handle_channel_post(update: Update, context: ContextTypes.DEFAULT_TYPE
         # PDF Link ရယူပါ
         file_id = post.document.file_id
         file = await context.bot.get_file(file_id)
-        link = f"https://t.me/itprogrammingfreeebook/{message_id}"
+        link = f"https://t.me/yourchannel/{message_id}"
 
         # Google Sheet သို့ Message ID နှင့်တကွ သိမ်းပါ
         sheet.append_row([message_id, title, author, category, link])
