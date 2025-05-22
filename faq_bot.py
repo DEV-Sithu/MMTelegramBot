@@ -138,7 +138,7 @@ FAQ = [
 ]
 
 
-BOT_USERNAME = "MK_FaqBot"  # Don't include @
+BOT_USERNAME = "your bot name"  # Don't include @
 
 
 
@@ -263,7 +263,7 @@ async def about_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def main() -> None:
     """Bot ကို စတင်အလုပ်လုပ်မည့် function"""
     # Bot Token ထည့်ပါ
-    application = Application.builder().token("bot api token").build()
+    application = Application.builder().token("your_bot_token").build()
     
     # Handlers များ
     application.add_handler(CommandHandler("start", start))
