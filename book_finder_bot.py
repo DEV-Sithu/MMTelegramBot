@@ -34,8 +34,8 @@ async def post_init(application):
     try:
         # Button ကို URL နဲ့ပြောင်းသုံးထားပါတယ်
         keyboard = [
-            [InlineKeyboardButton("🔍 စာအုပ်ရှာဖွေရန်...", url="https://t.me/MmITEbookFinderBot?start=search")],
-            [InlineKeyboardButton("📚 စာအုပ်အမျိုးအစားများကြည့်ရန်....", url="https://t.me/MmITEbookFinderBot?start=booklist")]
+            [InlineKeyboardButton("🔍 စာအုပ်ရှာဖွေရန်...", url="https://t.me/yourBot?start=search")],
+            [InlineKeyboardButton("📚 စာအုပ်အမျိုးအစားများကြည့်ရန်....", url="https://t.me/yourBot?start=booklist")]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -240,7 +240,7 @@ async def handle_channel_post(update: Update, context: ContextTypes.DEFAULT_TYPE
         # (5) PDF Link ရယူပါ
         file_id = edited_post.document.file_id
         file = await context.bot.get_file(file_id)
-        link = f"https://t.me/itprogrammingfreeebook/{message_id}"
+        link = f"https://t.me/yourchannel/{message_id}"
 
         # (6) Google Sheet Update
         cell = sheet.find(str(message_id))
@@ -293,7 +293,7 @@ async def handle_edited_post(update: Update, context: ContextTypes.DEFAULT_TYPE)
         # PDF Link ရယူပါ
         file_id = edited_post.document.file_id
         file = await context.bot.get_file(file_id)
-        link = f"https://t.me/itprogrammingfreeebook/{message_id}"
+        link = f"https://t.me/yourchannel/{message_id}"
 
         # တစ်ခုချင်းစီ Update လုပ်ပါ
         sheet.update_cell(row, 2, title)    # Column B
