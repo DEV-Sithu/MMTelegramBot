@@ -12,3 +12,8 @@ link https://openrouter.ai/
 ```
 pip install python-telegram-bot
 ```
+
+# Faq Bot
+```
+pip install python-telegram-bot
+```
