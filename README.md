@@ -52,3 +52,9 @@ pip install python-telegram-bot
 pip install pyrogram tgcrypto yt-dlp
 pip install requests
 ```
+
+# Telegram Quiz Bot ကို JavaScript (Node.js) နဲ့ ဖန်တီးနည်း
+```
+npm init -y
+npm install telegraf dotenv
+```
